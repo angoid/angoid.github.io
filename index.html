@@ -1,9 +1,49 @@
 <!doctype html>
 <html>
   <head>
+    <style>
+    :root {
+      --color-1: #323031;
+      --color-2: #FFC857;
+      --color-3: #DB3A34;
+      --color-4: #084c61;
+      --color-5: #177E89;
+    }
+    #outer {
+      background: var(--color-3);
+      line-height: 1;
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      min-height: calc(100vh - 20px);
+    }
+    #inner {
+      padding: 1.5rem;   
+      text-align: center;
+    }
+    h1 {
+      font-family: "Futura", sans-serif;
+      font-size: 6.5rem;
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content;
+      margin: auto;
+      text-transform: uppercase;
+      color: var(--color-2);
+    }
+    </style>    
     <title>By Thunder</title>
   </head>
   <body>
-    <p>By Thunder</p>
+    <div id="outer">
+      <div id="inner">
+        <h1>by thunder</h1>
+      </div>
+    </div>
   </body>
+  <script language="javascript">
+    var colors = ['#323031', '#DB3A34', '#084c61', '#177E89'];
+    var random_color = colors[Math.floor(Math.random() * colors.length)];
+    document.getElementById('outer').style.background =random_color;
+  </script>
 </html>
