@@ -10,7 +10,6 @@
       --color-5: #177E89;
     }
     #outer {
-      background: var(--color-3);
       line-height: 1;
       min-height: 100%;
       display: grid;
@@ -44,6 +43,6 @@
   <script language="javascript">
     var colors = ['#323031', '#DB3A34', '#084c61', '#177E89'];
     var random_color = colors[Math.floor(Math.random() * colors.length)];
-    document.getElementById('outer').style.background =random_color;
+    document.body.style.background = random_color; 
   </script>
 </html>
