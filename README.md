@@ -1,2 +1,0 @@
-# bythunder
-bythunder website

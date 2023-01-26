@@ -2,12 +2,9 @@
 <html>
   <head>
     <style>
-    :root {
-      --color-1: #323031;
-      --color-2: #FFC857;
-      --color-3: #DB3A34;
-      --color-4: #084c61;
-      --color-5: #177E89;
+
+    .body{
+        color: var(--color-2);
     }
     #outer {
       line-height: 1;
@@ -17,11 +14,11 @@
       min-height: calc(100vh - 20px);
     }
     #inner {
+      font-family: "Futura", sans-serif;
       padding: 1.5rem;   
       text-align: center;
     }
     h1 {
-      font-family: "Futura", sans-serif;
       font-size: 6.5rem;
       width: -webkit-min-content;
       width: -moz-min-content;
@@ -29,19 +26,28 @@
       margin: auto;
       color: var(--color-2);
     }
+    h2 {
+      font-size: 1.5rem;
+      margin: auto;
+      color: var(--color-3);
+    }    
     </style>    
-    <title>By Thunder</title>
+    <title></title>
   </head>
   <body>
     <div id="outer">
       <div id="inner">
-        <h1>By Thunder</h1>
+
       </div>
     </div>
   </body>
   <script language="javascript">
-    var colors = ['#323031', '#DB3A34', '#084c61', '#177E89'];
-    var random_color = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.background = random_color; 
+    // var colors = ['#000000', '#14213D', '#FCA311', '#e5e5e5', '#ffffff'];
+    // var random_color = colors[Math.floor(Math.random() * colors.length)];
+    // document.body.style.background = "var(--color-4)"; 
+
   </script>
+  <body>
+    <script src="main.js"></script>
+  </body>
 </html>
