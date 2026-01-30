@@ -1,16 +1,26 @@
-
 <!doctype html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
 
-    body{
-        color: var(--color-2);
-        background-color: var(--color-1);
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Erica+One&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      color: var(--color-2);
+      background-color: var(--color-1);
+      margin: 0;
+      overflow-x: hidden;
     }
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+
     #outer {
       line-height: 1;
       min-height: 100%;
@@ -18,15 +28,18 @@
       place-items: center;
       min-height: calc(100vh - 20px);
     }
+
     #inner {
       font-family: "Space Grotesk", sans-serif;
       padding: 1.5rem;
       text-align: center;
     }
+
     #logo {
-      padding: 1.5rem;   
+      padding: 1.5rem;
       text-align: center;
     }
+
     h1 {
       font-size: 5rem;
       width: -webkit-min-content;
@@ -35,11 +48,13 @@
       margin: auto;
       color: var(--color-6);
     }
+
     h2 {
       font-size: 1.5rem;
       margin: auto;
       color: var(--color-3);
-    }    
+    }
+
     h3 {
       font-size: 6.5rem;
       letter-spacing: 9px;
@@ -48,25 +63,27 @@
       width: min-content;
       margin: auto;
       color: var(--color-2);
-      padding-left:4px;
-    }    
-    </style>    
-    <title></title>
-  </head>
-  <body>
-    <div id="outer">
-      <div id="inner">
+      padding-left: 4px;
+    }
+  </style>
+  <title></title>
+</head>
 
-      </div>
+<body>
+  <div id="outer">
+    <div id="inner">
+
     </div>
-  </body>
-  <script language="javascript">
-    // var colors = ['#041316', '#14213D', '#FCA311', '#e5e5e5', '#ffffff'];
-    // var random_color = colors[Math.floor(Math.random() * colors.length)];
-    // document.body.style.background = "var(--color-4)"; 
+  </div>
+</body>
+<script language="javascript">
+  // var colors = ['#041316', '#14213D', '#FCA311', '#e5e5e5', '#ffffff'];
+  // var random_color = colors[Math.floor(Math.random() * colors.length)];
+  // document.body.style.background = "var(--color-4)"; 
+</script>
 
-  </script>
-  <body>
-    <script src="main.js"></script>
-  </body>
+<body>
+  <script src="main.js"></script>
+</body>
+
 </html>
