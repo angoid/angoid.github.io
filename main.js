@@ -18,6 +18,13 @@ if (dom == "monosonic") {
     css += "h1{";
     css += "text-align: left;";
     css += "}";
+    css += "@keyframes fadeSlideIn {";
+    css += "  from { opacity: 0; transform: translateY(-10px); }";
+    css += "  to { opacity: 1; transform: translateY(0); }";
+    css += "}";
+    css += ".status-animate {";
+    css += "  animation: fadeSlideIn 0.4s ease-out forwards;";
+    css += "}";
 } else {
     title = "By Thunder";
     css = " :root {";
@@ -70,16 +77,23 @@ if (dom == "monosonic") {
 
             if (response.ok) {
                 signupForm.style.display = "none";
-                statusMsg.innerText = "Thanks for joining! We'll be in touch soon.";
+                statusMsg.innerText = "Thanks for joining the MONO beta waitlist! We'll be in touch soon.";
                 statusMsg.style.color = "var(--color-6)";
                 statusMsg.style.fontWeight = "600";
+                statusMsg.classList.remove("status-animate");
+                void statusMsg.offsetWidth; // Trigger reflow to restart animation
+                statusMsg.classList.add("status-animate");
             } else {
                 throw new Error(result.error || "Something went wrong. Please try again.");
             }
         } catch (error) {
             console.error("Signup error:", error);
             statusMsg.innerText = error.message;
-            statusMsg.style.color = "red";
+            statusMsg.style.color = "#2F322F";
+            statusMsg.style.fontWeight = "500";
+            statusMsg.classList.remove("status-animate");
+            void statusMsg.offsetWidth; // Trigger reflow to restart animation
+            statusMsg.classList.add("status-animate");
             submitBtn.disabled = false;
             submitBtn.innerText = originalBtnText;
         }
