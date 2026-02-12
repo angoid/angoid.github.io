@@ -27,6 +27,33 @@
       height: auto;
     }
 
+    #container {
+      display: inline-flex;
+      /* Shrinks container to fit the form's width */
+      flex-direction: column;
+      align-items: center;
+      /* Centers the form inside the container */
+
+      /* Optional: If you want the entire container centered on the page */
+      margin: 0 auto;
+    }
+
+    #item1 {
+      margin-bottom: 20px;
+    }
+
+    #item2 {
+      font-family: "Space Grotesk", sans-serif;
+      align-self: flex-start;
+      /* Aligns text to the left edge of the form */
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    #email {
+      font-family: "Space Grotesk", sans-serif;
+    }
+
     #outer {
       line-height: 1;
       min-height: 100%;
