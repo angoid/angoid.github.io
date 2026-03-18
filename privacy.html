@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Erica One';
+      src: url('Erica_One/EricaOne-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --color-1: #FAB300;
+      --color-2: #14213D;
+      --color-3: #FCA311;
+      --color-4: #e5e5e5;
+      --color-5: #ffffff;
+      --color-6: #000000;
+      --color-dark: #2F322F;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      color: var(--color-2);
+      background-color: var(--color-1);
+      margin: 0;
+      overflow-x: hidden;
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    #page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    #wordmark {
+      font-family: 'Erica One', cursive;
+      font-size: 2.5rem;
+      letter-spacing: 4px;
+      color: var(--color-dark);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 2.5rem;
+    }
+
+    #wordmark:hover {
+      opacity: 0.75;
+    }
+
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-dark);
+      margin: 0 0 0.25rem;
+    }
+
+    .updated {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--color-dark);
+      opacity: 0.6;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-dark);
+      margin: 2rem 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--color-2);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin: 0.25rem 0 0.75rem;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      color: var(--color-dark);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .divider {
+      border: none;
+      border-top: 2px solid var(--color-dark);
+      opacity: 0.12;
+      margin: 2rem 0;
+    }
+
+    .contact-block {
+      background-color: rgba(47, 50, 47, 0.08);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .contact-block p {
+      margin: 0;
+    }
+  </style>
+  <title>Privacy Policy — Monos FM</title>
+</head>
+
+<body>
+  <div id="page">
+
+    <a id="wordmark" href="/">MONOS</a>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 2026</p>
+
+    <p>Monos FM ("Monos", "we", "us") is a personalised radio app that plays new music based on your tastes. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <hr class="divider">
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Account information</strong> — your name and email address, provided when you sign in with Apple or Google.</li>
+      <li><strong>Music preferences</strong> — genres, artists, and listening history you tell us about during onboarding or through your Apple Music library (with your permission).</li>
+      <li><strong>Usage data</strong> — which shows you generate and listen to, how long you listen, and in-app interactions. This helps us improve the product.</li>
+      <li><strong>Device information</strong> — device type, OS version, and a randomly generated device identifier used to maintain your session.</li>
+    </ul>
+
+    <h2>What we do not collect</h2>
+    <ul>
+      <li>We do not collect your location.</li>
+      <li>We do not access your microphone.</li>
+      <li>We do not store your Apple Music credentials — authentication is handled directly by Apple.</li>
+      <li>We do not sell your data to third parties.</li>
+    </ul>
+
+    <h2>How we use your data</h2>
+    <ul>
+      <li><strong>Personalisation</strong> — to generate radio shows and music suggestions tailored to your taste.</li>
+      <li><strong>Product improvement</strong> — aggregated, anonymised usage analytics help us understand what's working and what to build next.</li>
+      <li><strong>Communication</strong> — we may send you occasional product updates to your email address. You can opt out at any time.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>Monos FM uses the following third-party services, each governed by their own privacy policy:</p>
+    <ul>
+      <li><strong>Apple Music / MusicKit</strong> — to access your library and play tracks. Governed by Apple's Privacy Policy.</li>
+      <li><strong>Sign in with Apple / Google Sign-In</strong> — for authentication. No password is stored by us.</li>
+      <li><strong>Supabase</strong> — secure cloud database hosting your account and preferences data, stored in the EU.</li>
+      <li><strong>PostHog</strong> — anonymised product analytics. No personally identifiable information is sent.</li>
+      <li><strong>Anthropic Claude API</strong> — used to generate show scripts and music commentary. No personal data is included in prompts sent to this service.</li>
+    </ul>
+
+    <h2>Data retention</h2>
+    <p>We keep your account data for as long as your account is active. If you delete your account, your personal data is removed within 30 days. Anonymised analytics data may be retained indefinitely.</p>
+
+    <h2>Your rights</h2>
+    <p>You have the right to access, correct, or delete the personal data we hold about you. To exercise any of these rights, contact us at the address below.</p>
+
+    <h2>Children</h2>
+    <p>Monos FM is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. The "last updated" date at the top will reflect any changes. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <hr class="divider">
+
+    <div class="contact-block">
+      <h2 style="margin-top:0;">Contact</h2>
+      <p>Questions about your data or this policy? Reach us at <a href="mailto:hello@monosonic.co.uk">hello@monosonic.co.uk</a></p>
+    </div>
+
+  </div>
+</body>
+
+</html>
